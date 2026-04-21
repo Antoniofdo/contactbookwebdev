@@ -1,7 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderNav from "./components/HeaderNav.vue";
 </script>
 
 <template>
-  <HelloWorld />
+  <div class="app-shell">
+    <HeaderNav />
+    <main class="container">
+      <router-view />
+    </main>
+  </div>
 </template>
+
